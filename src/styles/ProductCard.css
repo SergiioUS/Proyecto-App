@@ -1,0 +1,132 @@
+/* Product Card Styles */
+.product-card {
+  background: white;
+  border: 2px solid #ecf0f1;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-card:hover {
+  border-color: #ff6b6b;
+  box-shadow: 0 8px 16px rgba(255, 107, 107, 0.15);
+  transform: translateY(-5px);
+}
+
+.product-card.expanded {
+  grid-column: span 1;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: #ff6b6b;
+}
+
+.product-emoji {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.product-description {
+  color: #7f8c8d;
+  font-size: 13px;
+  margin-bottom: 10px;
+  min-height: 32px;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.btn-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Product Options */
+.product-options {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #ecf0f1;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.option-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.option-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.option-group select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.option-group select:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+.btn-add {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-close {
+  width: 100%;
+  background-color: #95a5a6;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.btn-close:hover {
+  background-color: #7f8c8d;
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-emoji {
+    font-size: 36px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+}
