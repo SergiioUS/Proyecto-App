@@ -1,4 +1,4 @@
-/* Checkout Styles */
+/* Estilos del Pago */
 .checkout-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -118,7 +118,7 @@
   border-left: 4px solid #4ecdc4;
 }
 
-/* Checkout Summary */
+/* Resumen de Pago */
 .checkout-summary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -170,7 +170,7 @@
   font-weight: bold;
 }
 
-/* Checkout Actions */
+/* Acciones del Pago */
 .checkout-actions {
   display: flex;
   justify-content: space-between;

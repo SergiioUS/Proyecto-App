@@ -1,4 +1,4 @@
-/* General Styles */
+/* Estilos generales */
 :root {
   --primary-color: #ff6b6b;
   --secondary-color: #4ecdc4;
@@ -73,7 +73,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Navigation */
+/* Navegacion */
 .app-nav {
   display: flex;
   gap: 10px;
@@ -105,7 +105,7 @@ body {
   color: var(--primary-color);
 }
 
-/* Main Content */
+/* Contenido principal */
 .app-main {
   flex: 1;
   padding: 20px;
@@ -115,7 +115,7 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* Buttons */
+/* Botones*/
 .btn-primary,
 .btn-secondary {
   padding: 12px 24px;
@@ -168,7 +168,7 @@ body {
   background-color: #c0392b;
 }
 
-/* Forms */
+/* Grupo botones*/
 .form-group {
   margin-bottom: 15px;
 }
@@ -215,7 +215,7 @@ body {
   gap: 15px;
 }
 
-/* Empty Cart */
+/*  */
 .empty-cart {
   text-align: center;
   padding: 60px 20px;
@@ -227,7 +227,7 @@ body {
   color: #999;
 }
 
-/* Responsive */
+/* */
 @media (max-width: 768px) {
   .app-header {
     flex-direction: column;

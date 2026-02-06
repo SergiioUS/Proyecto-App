@@ -1,4 +1,4 @@
-/* Product Card Styles */
+/* Estilos de la Tarjeta del Producto */
 .product-card {
   background: white;
   border: 2px solid #ecf0f1;
@@ -54,7 +54,7 @@
   font-size: 14px;
 }
 
-/* Product Options */
+/* Opciones del Producto */
 .product-options {
   margin-top: 20px;
   padding-top: 20px;

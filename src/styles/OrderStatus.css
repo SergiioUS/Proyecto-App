@@ -1,4 +1,4 @@
-/* Order Status Styles */
+/* Estilos del Estado del Pedido */
 .order-status-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -31,7 +31,7 @@
   font-weight: 600;
 }
 
-/* Order Info Grid */
+/* Cuadrícula de Información del Pedido */
 .order-info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -67,7 +67,7 @@
   margin-top: 8px;
 }
 
-/* Timeline */
+/* Línea de Tiempo */
 .timeline {
   background: white;
   padding: 25px;
@@ -167,7 +167,7 @@
   color: #ff6b6b;
 }
 
-/* Order Items */
+/* Artículos del Pedido */
 .order-items {
   background: white;
   padding: 25px;
@@ -232,7 +232,7 @@
   text-align: right;
 }
 
-/* Order Message */
+/* Mensaje del Pedido */
 .order-message {
   background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
   color: white;
