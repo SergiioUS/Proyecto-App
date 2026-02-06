@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/OrderStatus.css';
+import formatCurrency from '../utils/formatCurrency';
 
 function OrderStatus({ order }) {
   const [currentStep, setCurrentStep] = useState(0);
 
   const steps = [
-    { name: 'Confirmado', emoji: '✅', delay: 0 },
-    { name: 'Preparando', emoji: '👨‍🍳', delay: 2000 },
-    { name: 'Listo', emoji: '📦', delay: 4000 },
-    { name: 'En camino', emoji: '🚗', delay: 6000 },
-    { name: 'Entregado', emoji: '🎉', delay: 8000 }
+    { name: 'Confirmado', emoji: '', delay: 0 },
+    { name: 'Preparando', emoji: '', delay: 2000 },
+    { name: 'Listo', emoji: '', delay: 4000 },
+    { name: 'En camino', emoji: '', delay: 6000 },
+    { name: 'Entregado', emoji: '', delay: 8000 }
   ];
 
   useEffect(() => {
@@ -33,7 +34,7 @@ function OrderStatus({ order }) {
 
       <div className="order-info-grid">
         <div className="info-card">
-          <span className="info-label">🏠 Dirección</span>
+          <span className="info-label"> Dirección</span>
           <p>{order.address}</p>
           <p>{order.city}, {order.zipCode}</p>
         </div>
@@ -42,8 +43,8 @@ function OrderStatus({ order }) {
           <p>{order.phone}</p>
         </div>
         <div className="info-card">
-          <span className="info-label">💰 Total</span>
-          <p className="price">${order.total.toFixed(2)}</p>
+          <span className="info-label"> Total</span>
+          <p className="price">{formatCurrency(order.total)}</p>
         </div>
         <div className="info-card">
           <span className="info-label">⏱️ Estimado</span>
@@ -79,7 +80,7 @@ function OrderStatus({ order }) {
                 <small>Sabor: {item.options.flavor} | Salsa: {item.options.sauce}</small>
               </div>
               <div className="item-qty">x{item.quantity}</div>
-              <span className="item-price">${(item.price * item.quantity).toFixed(2)}</span>
+              <span className="item-price">{formatCurrency(item.price * item.quantity)}</span>
             </li>
           ))}
         </ul>
@@ -87,7 +88,7 @@ function OrderStatus({ order }) {
 
       <div className="order-message">
         {currentStep < steps.length - 1 ? (
-          <p>🚚 Tu pedido está en camino. ¡Gracias por tu compra!</p>
+          <p> Tu pedido está en camino. ¡Gracias por tu compra!</p>
         ) : (
           <p>🎉 ¡Tu pedido ha sido entregado! Esperamos que disfrutes tus postres.</p>
         )}

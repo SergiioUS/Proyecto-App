@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Checkout.css';
+import formatCurrency from '../utils/formatCurrency';
 
 function Checkout({ cartItems, userName, onOrderPlaced, onCancel }) {
   const [formData, setFormData] = useState({
@@ -13,7 +14,7 @@ function Checkout({ cartItems, userName, onOrderPlaced, onCancel }) {
   const [step, setStep] = useState('address');
 
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const shipping = 2.00;
+  const shipping = 20000; // COP
   const finalTotal = total + shipping;
 
   const handleAddressChange = (e) => {
@@ -26,7 +27,7 @@ function Checkout({ cartItems, userName, onOrderPlaced, onCancel }) {
 
   const validateAddress = () => {
     if (!formData.address.trim() || !formData.city.trim() || !formData.zipCode.trim() || !formData.phone.trim()) {
-      alert('Por favor completa todos los campos de dirección');
+      alert('Pon tu dirección');
       return false;
     }
     return true;
@@ -158,15 +159,15 @@ function Checkout({ cartItems, userName, onOrderPlaced, onCancel }) {
           <div className="summary-totals">
             <div className="summary-row">
               <span>Subtotal:</span>
-              <span>${total.toFixed(2)}</span>
+              <span>{formatCurrency(total)}</span>
             </div>
             <div className="summary-row">
               <span>Envío:</span>
-              <span>${shipping.toFixed(2)}</span>
+              <span>{formatCurrency(shipping)}</span>
             </div>
             <div className="summary-row total-row">
               <span>Total:</span>
-              <span>${finalTotal.toFixed(2)}</span>
+              <span>{formatCurrency(finalTotal)}</span>
             </div>
           </div>
         </div>

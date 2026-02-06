@@ -1,6 +1,6 @@
 /* Estilos de la Tarjeta del Producto */
 .product-card {
-  background: white;
+  background: rgb(255, 255, 255);
   border: 2px solid #ecf0f1;
   border-radius: 12px;
   padding: 20px;
@@ -11,7 +11,7 @@
 }
 
 .product-card:hover {
-  border-color: #ff6b6b;
+  border-color: #000000;
   box-shadow: 0 8px 16px rgba(255, 107, 107, 0.15);
   transform: translateY(-5px);
 }
@@ -44,14 +44,21 @@
 .product-price {
   font-size: 22px;
   font-weight: bold;
-  color: #ff6b6b;
+  color: #050505;
   margin-bottom: 15px;
 }
 
 .btn-select {
   width: 100%;
-  padding: 10px;
+  padding: 10px 16px;
   font-size: 14px;
+  background-color: rgba(26, 30, 34, 0.08);
+  color: var(--dark-color);
+  border: 1px solid rgba(44,62,80,0.06);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 /* Opciones del Producto */
@@ -104,17 +111,34 @@
 .btn-add {
   width: 100%;
   margin-bottom: 10px;
+  background: linear-gradient(90deg, var(--primary-color), #ff8b8b);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
 .btn-close {
   width: 100%;
-  background-color: #95a5a6;
-  padding: 10px;
-  font-size: 14px;
+  background: transparent;
+  color: var(--dark-color);
+  border: 1px solid #e6e6e6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .btn-close:hover {
-  background-color: #7f8c8d;
+  background-color: #fafafa;
 }
 
 @media (max-width: 480px) {

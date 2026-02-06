@@ -42,7 +42,7 @@ function Login({ onLogin }) {
         </form>
 
         <p className="login-info">
-          ℹ️ No necesitas registrarte, solo ingresa tu nombre
+          ℹ️ Solo ingresa tu nombre
         </p>
       </div>
     </div>

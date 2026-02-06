@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/ProductCard.css';
+import formatCurrency from '../utils/formatCurrency';
 
 function ProductCard({ product, sauces, onSelectProduct, onAddToCart, isSelected }) {
   const [selectedFlavor, setSelectedFlavor] = useState(product.flavors[0]);
@@ -16,7 +17,7 @@ function ProductCard({ product, sauces, onSelectProduct, onAddToCart, isSelected
       <div className="product-emoji">{product.image}</div>
       <h3>{product.name}</h3>
       <p className="product-description">{product.description}</p>
-      <p className="product-price">${product.price.toFixed(2)}</p>
+      <p className="product-price">{formatCurrency(product.price)}</p>
 
       {isSelected && (
         <div className="product-options">

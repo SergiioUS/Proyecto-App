@@ -1,12 +1,15 @@
 import React from 'react';
 import '../styles/Cart.css';
+import formatCurrency from '../utils/formatCurrency';
 
 function Cart({ items, onRemoveItem, onUpdateQuantity, onCheckout }) {
   const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const shipping = 20000; // valor por defecto en COP
+  const finalTotal = total + shipping;
 
   return (
     <div className="cart-container">
-      <h2>Tu Carrito 🛒</h2>
+      <h2>Tu Carrito </h2>
       
       <div className="cart-items">
         {items.map((item, index) => (
@@ -21,7 +24,7 @@ function Cart({ items, onRemoveItem, onUpdateQuantity, onCheckout }) {
                 <p className="item-sauce">
                   Salsa: <strong>{item.options.sauce}</strong>
                 </p>
-                <p className="item-price">${item.price.toFixed(2)}</p>
+                <p className="item-price">{formatCurrency(item.price)}</p>
               </div>
             </div>
 
@@ -45,10 +48,10 @@ function Cart({ items, onRemoveItem, onUpdateQuantity, onCheckout }) {
                 onClick={() => onRemoveItem(index)}
                 className="btn-remove"
               >
-                🗑️ Eliminar
+                Eliminar
               </button>
               <p className="subtotal">
-                Subtotal: ${(item.price * item.quantity).toFixed(2)}
+                Subtotal: {formatCurrency(item.price * item.quantity)}
               </p>
             </div>
           </div>
@@ -58,15 +61,15 @@ function Cart({ items, onRemoveItem, onUpdateQuantity, onCheckout }) {
       <div className="cart-summary">
         <div className="summary-row">
           <span>Subtotal:</span>
-          <span>${total.toFixed(2)}</span>
+          <span>{formatCurrency(total)}</span>
         </div>
         <div className="summary-row">
           <span>Envío:</span>
-          <span>$2.00</span>
+          <span>{formatCurrency(shipping)}</span>
         </div>
         <div className="summary-row total">
           <span>Total:</span>
-          <span>${(total + 2).toFixed(2)}</span>
+          <span>{formatCurrency(finalTotal)}</span>
         </div>
         <button onClick={onCheckout} className="btn-primary btn-large">
           Proceder al Pago

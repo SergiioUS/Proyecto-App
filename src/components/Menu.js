@@ -9,102 +9,102 @@ function Menu({ onAddToCart }) {
     {
       id: 1,
       name: 'Producto1',
-      price: 5.99,
-      description: 'Brownie de chocolate oscuro casero',
+      price: 5990,
+      description: 'Nada',
       image: '',
-      flavors: ['Chocolate oscuro', 'Chocolate con leche']
+      flavors: ['Nada', 'Nada']
     },
     {
       id: 2,
       name: 'Producto1',
-      price: 7.99,
+      price: 7990,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Tradicional', 'Con cacao extra']
+      flavors: ['Nada', 'Nada']
     },
     {
       id: 3,
       name: 'Producto1',
-      price: 8.99,
+      price: 8990,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Original', 'Fresa', 'Frambuesa', 'Mango']
+      flavors: ['Nada', 'Nada', 'Nada', 'Nada']
     },
     {
       id: 4,
       name: 'Producto1',
-      price: 6.99,
+      price: 6990,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Con azúcar', 'Con miel', 'Con chocolate']
+      flavors: [' Nada', ' Nada', ' Nada']
     },
     {
       id: 5,
       name: 'Producto1',
-      price: 5.49,
+      price: 5490,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Chocolate oscuro', 'Chocolate blanco', 'Chocolate con menta']
+      flavors: ['Nada', 'Nada', 'Nada']
     },
     {
       id: 6,
       name: 'Producto1',
-      price: 4.99,
+      price: 4990,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Clásico', 'Con vainilla', 'Con café']
+      flavors: ['Nada', 'Nada', 'Nada']
     },
     {
       id: 7,
       name: 'Producto1',
-      price: 6.49,
+      price: 6490,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Vainilla', 'Chocolate', 'Fresa', 'Pistacho', 'Caramelo']
+      flavors: ['Nada', 'Nada', 'Nada', 'Nada', 'Nada']
     },
     {
       id: 8,
       name: 'Producto1',
-      price: 7.49,
+      price: 7490,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Limón', 'Limón con merengue']
+      flavors: ['Nada', 'Nada']
     },
     {
       id: 9,
       name: 'Producto1',
-      price: 4.99,
+      price: 4990,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Azúcar', 'Chocolate', 'Fresa', 'Vainilla']
+      flavors: ['Nada', 'Nada', 'Nada', 'Nada']
     },
     {
       id: 10,
       name: 'Producto1',
-      price: 5.99,
+      price: 5990,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Café clásico', 'Café caramelo', 'Café vainilla']
+      flavors: ['Nada', 'Nada', 'Nada']
     },
     {
       id: 11,
       name: 'Producto1',
-      price: 3.99,
+      price: 3990,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Frutas', 'Chocolate', 'Neutral']
+      flavors: ['Nada', 'Nada', 'Nada']
     },
     {
       id: 12,
       name: 'Producto1',
-      price: 8.49,
+      price: 8490,
       description: 'descripcion producto',
       image: '',
-      flavors: ['Berries', 'Frutas tropicales', 'Frutas del bosque']
+      flavors: ['Nada', 'Nada', 'Nada']
     }
   ];
 
-  const sauces = ['Chocolate derretido', 'Caramelo', 'Frutos rojos', 'Caramelo salado'];
+  const sauces = ['Salsa 1', 'Salsa 1', ' Salsa 1', 'Salsa 1'];
 
   const handleAddToCart = (flavor, sauce) => {
     if (selectedProduct) {
@@ -124,7 +124,7 @@ function Menu({ onAddToCart }) {
 
   return (
     <div className="menu-container">
-      <h2>Nuestros Postres 🍪</h2>
+      <h2>Postres</h2>
       <div className="menu-grid">
         {desserts.map(dessert => (
           <ProductCard
