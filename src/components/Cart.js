@@ -15,7 +15,7 @@ function Cart({ items, onRemoveItem, onUpdateQuantity, onCheckout }) {
         {items.map((item, index) => (
           <div key={index} className="cart-item">
             <div className="item-info">
-              <span className="item-emoji">{item.image}</span>
+              <img className="item-emoji" src={item.image} alt={item.name} />
               <div className="item-details">
                 <h4>{item.name}</h4>
                 <p className="item-flavor">
