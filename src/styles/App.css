@@ -6,7 +6,7 @@
   --light-color: #ecf0f1;
   --success-color: #2ecc71;
   --warning-color: #f39c12;
-  --danger-color: #f00249;
+  --danger-color: #000000;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
