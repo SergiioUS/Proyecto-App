@@ -34,7 +34,7 @@ function OrderStatus({ order }) {
 
       <div className="order-info-grid">
         <div className="info-card">
-          <span className="info-label"> Dirección</span>
+          <span className="info-label"> 📌Dirección</span>
           <p>{order.address}</p>
           <p>{order.city}, {order.zipCode}</p>
         </div>
@@ -43,7 +43,7 @@ function OrderStatus({ order }) {
           <p>{order.phone}</p>
         </div>
         <div className="info-card">
-          <span className="info-label"> Total</span>
+          <span className="info-label"> 💰Total</span>
           <p className="price">{formatCurrency(order.total)}</p>
         </div>
         <div className="info-card">
@@ -74,7 +74,7 @@ function OrderStatus({ order }) {
         <ul className="items-list">
           {order.items.map((item, index) => (
             <li key={index} className="order-item">
-              <span className="item-emoji">{item.image}</span>
+               <img className="item-emoji" src={item.image} alt={item.name} />
               <div className="item-info">
                 <strong>{item.name}</strong>
                 <small>Sabor: {item.options.flavor} | Salsa: {item.options.sauce}</small>
