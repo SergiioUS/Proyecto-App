@@ -14,7 +14,20 @@ function ProductCard({ product, sauces, onSelectProduct, onAddToCart, isSelected
 
   return (
     <div className={`product-card ${isSelected ? 'expanded' : ''}`}>
-      <div className="product-emoji">{product.image}</div>
+      <div className="product-emoji">
+        {product.image ? (
+          <img
+            src={product.image}
+            alt={product.name}
+            className="product-image"
+            onError={e => {
+              e.target.onerror = null;
+              e.target.style.display = 'none';
+              e.target.parentNode.innerHTML += `<div style='color:#888;font-size:13px;'>Imagen no disponible</div>`;
+            }}
+          />
+        ) : null}
+      </div>
       <h3>{product.name}</h3>
       <p className="product-description">{product.description}</p>
       <p className="product-price">{formatCurrency(product.price)}</p>

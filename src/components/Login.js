@@ -17,7 +17,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>🍰 Nombre App</h1>
+        <h1>PostreLab 🍰</h1>
         <p className="login-subtitle">Envío de postres a tu hogar</p>
         
         <form onSubmit={handleSubmit}>

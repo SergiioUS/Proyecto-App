@@ -79,7 +79,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>🍰 DulceDelivery</h1>
+        <h1>PostreLab🍰</h1>
         <div className="header-actions">
           <span className="user-name">Hola, {currentUser}!</span>
           <button onClick={handleLogout} className="logout-btn">Cerrar sesión</button>

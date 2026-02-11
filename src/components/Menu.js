@@ -8,103 +8,103 @@ function Menu({ onAddToCart }) {
   const desserts = [
     {
       id: 1,
-      name: 'Producto1',
-      price: 5990,
-      description: 'Nada',
-      image: '',
-      flavors: ['Nada', 'Nada']
+      name: 'Torta Chocolate Oscuro',
+      price: 8990,
+      description: 'Torta de chocolate oscuro ganache con corazón de chocolate suave',
+        image: '/images/desserts/1.jpg',
+      flavors: ['Oscuro 70%', 'Extra Oscuro', 'Con Frambuesa']
     },
     {
       id: 2,
-      name: 'Producto1',
+      name: 'Cheesecake NY',
       price: 7990,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada']
+      description: 'Auténtico cheesecake de Nueva York con base de galleta crunch',
+        image: '/images/desserts/2.jpg',
+      flavors: ['Nature', 'Fresa', 'Arándano', 'Limón']
     },
     {
       id: 3,
-      name: 'Producto1',
-      price: 8990,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada', 'Nada']
+      name: 'Tiramisu Italiano',
+      price: 7490,
+      description: 'Tiramisu auténtico con mascarpone cremoso y cacao',
+      image: '/images/desserts/3.jpg',
+      flavors: ['Clásico', 'Con Café', 'Con Limoncello']
     },
     {
       id: 4,
-      name: 'Producto1',
-      price: 6990,
-      description: 'descripcion producto',
-      image: '',
-      flavors: [' Nada', ' Nada', ' Nada']
+      name: 'Brownies Calientes',
+      price: 5990,
+      description: 'Brownie de chocolate con centro derretido y nueces',
+      image: '/images/desserts/4.jpg',
+      flavors: ['Original', 'Con Nueces', 'Con Caramelo']
     },
     {
       id: 5,
-      name: 'Producto1',
-      price: 5490,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada']
+      name: 'Frambuesero',
+      price: 6990,
+      description: 'Postre con frambuesas frescas, mousse y biscocho',
+      image: '/images/desserts/5.jpg',
+      flavors: ['Frambuesa', 'Frambuesa-Chocolate', 'Frambuesa-Blanco']
     },
     {
       id: 6,
-      name: 'Producto1',
+      name: 'Flan Casero',
       price: 4990,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada']
+      description: 'Flan tradicional con caramelo tostado y crema suave',
+      image: '/images/desserts/6.jpg',
+      flavors: ['Nature', 'Vainilla', 'Dulce de Leche']
     },
     {
       id: 7,
-      name: 'Producto1',
+      name: 'Pavlova Merengue',
       price: 6490,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada', 'Nada', 'Nada']
+      description: 'Merengue crujiente con frutas frescas y crema batida',
+      image: '/images/desserts/7.jpg',
+      flavors: ['Mixto Frutas', 'Fresa', 'Frambuesa', 'Moras']
     },
     {
       id: 8,
-      name: 'Producto1',
-      price: 7490,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada']
+      name: 'Mousse Chocolate Blanco',
+      price: 5890,
+      description: 'Mousse ligero de chocolate blanco con ganache',
+      image: '/images/desserts/8.jpg',
+      flavors: ['Blanco Puro', 'Blanco-Frambuesa', 'Blanco-Pistacho']
     },
     {
       id: 9,
-      name: 'Producto1',
-      price: 4990,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada', 'Nada']
+      name: 'Pannetone Artesanal',
+      price: 9890,
+      description: 'Pannetone casero con frutas confitadas y pasas de calidad',
+      image: '/images/desserts/9.jpg',
+      flavors: ['Tradicional', 'Con Chocolate', 'Con Nueces']
     },
     {
       id: 10,
-      name: 'Producto1',
-      price: 5990,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada']
+      name: 'Macarons Franceses',
+      price: 3990,
+      description: 'Macarons artesanales de importación con sabores variados',
+      image: '/images/desserts/10.jpg',
+      flavors: ['Frambuesa', 'Pistacho', 'Chocolate', 'Vainilla']
     },
     {
       id: 11,
-      name: 'Producto1',
-      price: 3990,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada']
+      name: 'Helado Gourmet',
+      price: 4890,
+      description: 'Helado artesanal con ingredientes naturales y frutas frescas',
+      image: '/images/desserts/11.jpg',
+      flavors: ['Vainilla Madagascar', 'Chocolate Belga', 'Fresa', 'Pistacho']
     },
     {
       id: 12,
-      name: 'Producto1',
-      price: 8490,
-      description: 'descripcion producto',
-      image: '',
-      flavors: ['Nada', 'Nada', 'Nada']
+      name: 'Tarta Manzana Canela',
+      price: 6890,
+      description: 'Tarta de manzana con crema pastelera y canela',
+      image: '/images/desserts/12.jpg',
+      flavors: ['Manzana Verde', 'Manzana Roja', 'Con Caramelo']
     }
   ];
 
-  const sauces = ['Salsa 1', 'Salsa 1', ' Salsa 1', 'Salsa 1'];
+  const sauces = ['Caramelo Caliente', 'Chocolate Derretido', 'Frutos Rojos', 'Mermelada'];
 
   const handleAddToCart = (flavor, sauce) => {
     if (selectedProduct) {
