@@ -1,9 +1,9 @@
-/* Estilos generales */
+/* Estilos generales app */
 :root {
   --primary-color: #000000;
   --secondary-color: #0a0a0a;
-  --dark-color: #2c3e50;
-  --light-color: #ecf0f1;
+  --dark-color: hsl(210, 29%, 24%);
+  --light-color: #dee6e7;
   --success-color: #2ecc71;
   --warning-color: #f39c12;
   --danger-color: #000000;
