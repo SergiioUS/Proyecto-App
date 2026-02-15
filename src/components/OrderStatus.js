@@ -2,16 +2,17 @@ import React, { useState, useEffect } from 'react';
 import '../styles/OrderStatus.css';
 import formatCurrency from '../utils/formatCurrency';
 
+// ✅
+const steps = [
+  { name: 'Confirmado', emoji: '✅', delay: 0 },
+  { name: 'Preparando', emoji: '💬', delay: 2000 },
+  { name: 'Listo', emoji: '✅', delay: 4000 },
+  { name: 'En camino', emoji: '🚚', delay: 6000 },
+  { name: 'Entregado', emoji: '🎁', delay: 8000 }
+];
+
 function OrderStatus({ order }) {
   const [currentStep, setCurrentStep] = useState(0);
-
-  const steps = [
-    { name: 'Confirmado', emoji: '✅', delay: 0 },
-    { name: 'Preparando', emoji: '💬', delay: 2000 },
-    { name: 'Listo', emoji: '✅', delay: 4000 },
-    { name: 'En camino', emoji: '🚚', delay: 6000 },
-    { name: 'Entregado', emoji: '🎁', delay: 8000 }
-  ];
 
   useEffect(() => {
     const timers = steps.map((step, index) => {
@@ -23,7 +24,7 @@ function OrderStatus({ order }) {
     });
 
     return () => timers.forEach(timer => timer && clearTimeout(timer));
-  }, [steps]);
+  }, []); 
 
   return (
     <div className="order-status-container">
