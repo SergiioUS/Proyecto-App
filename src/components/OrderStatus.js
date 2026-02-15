@@ -23,7 +23,7 @@ function OrderStatus({ order }) {
     });
 
     return () => timers.forEach(timer => timer && clearTimeout(timer));
-  }, []);
+  }, [steps]);
 
   return (
     <div className="order-status-container">
