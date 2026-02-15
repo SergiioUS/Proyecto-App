@@ -6,11 +6,11 @@ function OrderStatus({ order }) {
   const [currentStep, setCurrentStep] = useState(0);
 
   const steps = [
-    { name: 'Confirmado', emoji: '', delay: 0 },
-    { name: 'Preparando', emoji: '', delay: 2000 },
-    { name: 'Listo', emoji: '', delay: 4000 },
-    { name: 'En camino', emoji: '', delay: 6000 },
-    { name: 'Entregado', emoji: '', delay: 8000 }
+    { name: 'Confirmado', emoji: '✅', delay: 0 },
+    { name: 'Preparando', emoji: '💬', delay: 2000 },
+    { name: 'Listo', emoji: '✅', delay: 4000 },
+    { name: 'En camino', emoji: '🚚', delay: 6000 },
+    { name: 'Entregado', emoji: '🎁', delay: 8000 }
   ];
 
   useEffect(() => {
