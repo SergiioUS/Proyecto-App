@@ -9,7 +9,7 @@ function Menu({ onAddToCart }) {
     {
       id: 1,
       name: 'Torta Chocolate Oscuro',
-      price: 20.000,
+      price: 20000,
       description: 'Torta de chocolate oscuro ganache con corazón de chocolate suave',
         image: '/images/desserts/1.jpg',
       flavors: ['Oscuro 70%', 'Extra Oscuro', 'Con Frambuesa']
@@ -17,7 +17,7 @@ function Menu({ onAddToCart }) {
     {
       id: 2,
       name: 'Cheesecake NY',
-      price: 12.000,
+      price: 12000,
       description: 'Auténtico cheesecake de Nueva York con base de galleta crunch',
         image: '/images/desserts/2.jpg',
       flavors: ['Nature', 'Fresa', 'Arándano', 'Limón']
@@ -25,7 +25,7 @@ function Menu({ onAddToCart }) {
     {
       id: 3,
       name: 'Tiramisu Italiano',
-      price: 16.000,
+      price: 16000,
       description: 'Tiramisu auténtico con mascarpone cremoso y cacao',
       image: '/images/desserts/3.jpg',
       flavors: ['Clásico', 'Con Café', 'Con Limoncello']
@@ -33,7 +33,7 @@ function Menu({ onAddToCart }) {
     {
       id: 4,
       name: 'Brownies Calientes',
-      price: 20.000,
+      price: 20000,
       description: 'Brownie de chocolate con centro derretido y nueces',
       image: '/images/desserts/4.jpg',
       flavors: ['Original', 'Con Nueces', 'Con Caramelo']
@@ -41,7 +41,7 @@ function Menu({ onAddToCart }) {
     {
       id: 5,
       name: 'Frambuesero',
-      price: 10.000,
+      price: 10000,
       description: 'Postre con frambuesas frescas, mousse y biscocho',
       image: '/images/desserts/5.jpg',
       flavors: ['Frambuesa', 'Frambuesa-Chocolate', 'Frambuesa-Blanco']
@@ -49,7 +49,7 @@ function Menu({ onAddToCart }) {
     {
       id: 6,
       name: 'Flan Casero',
-      price: 8.000,
+      price: 8000,
       description: 'Flan tradicional con caramelo tostado y crema suave',
       image: '/images/desserts/6.jpg',
       flavors: ['Nature', 'Vainilla', 'Dulce de Leche']
@@ -57,7 +57,7 @@ function Menu({ onAddToCart }) {
     {
       id: 7,
       name: 'Pavlova Merengue',
-      price: 14.000,
+      price: 14000,
       description: 'Merengue crujiente con frutas frescas y crema batida',
       image: '/images/desserts/7.jpg',
       flavors: ['Mixto Frutas', 'Fresa', 'Frambuesa', 'Moras']
@@ -65,7 +65,7 @@ function Menu({ onAddToCart }) {
     {
       id: 8,
       name: 'Mousse Chocolate Blanco',
-      price: 16.000,
+      price: 16000,
       description: 'Mousse ligero de chocolate blanco con ganache',
       image: '/images/desserts/8.jpg',
       flavors: ['Blanco Puro', 'Blanco-Frambuesa', 'Blanco-Pistacho']
@@ -73,7 +73,7 @@ function Menu({ onAddToCart }) {
     {
       id: 9,
       name: 'Pannetone Artesanal',
-      price: 19.000,
+      price: 19000,
       description: 'Pannetone casero con frutas confitadas y pasas de calidad',
       image: '/images/desserts/9.jpg',
       flavors: ['Tradicional', 'Con Chocolate', 'Con Nueces']
@@ -81,7 +81,7 @@ function Menu({ onAddToCart }) {
     {
       id: 10,
       name: 'Macarons Franceses',
-      price: 11.000,
+      price: 11000,
       description: 'Macarons artesanales de importación con sabores variados',
       image: '/images/desserts/10.jpg',
       flavors: ['Frambuesa', 'Pistacho', 'Chocolate', 'Vainilla']
@@ -89,7 +89,7 @@ function Menu({ onAddToCart }) {
     {
       id: 11,
       name: 'Helado Gourmet',
-      price: 13.000,
+      price: 13000,
       description: 'Helado artesanal con ingredientes naturales y frutas frescas',
       image: '/images/desserts/11.jpg',
       flavors: ['Vainilla Madagascar', 'Chocolate Belga', 'Fresa', 'Pistacho']
@@ -97,7 +97,7 @@ function Menu({ onAddToCart }) {
     {
       id: 12,
       name: 'Tarta Manzana Canela',
-      price: 8.000,
+      price: 8000,
       description: 'Tarta de manzana con crema pastelera y canela',
       image: '/images/desserts/12.jpg',
       flavors: ['Manzana Verde', 'Manzana Roja', 'Con Caramelo']
